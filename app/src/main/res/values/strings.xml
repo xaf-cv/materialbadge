@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MaterialBadgeExample</string>
+    <string name="toggle_badge_visibility">Toggle badge visibility</string>
+    <string name="about_materialbadge">About MaterialBadge</string>
+</resources>

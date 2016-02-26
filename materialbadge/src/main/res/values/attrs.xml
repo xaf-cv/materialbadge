@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BadgedView">
+        <attr name="badgeIsVisible" format="boolean" />
+        <attr name="badgeText" format="string" />
+        <attr name="badgeTextColor" format="color" />
+        <attr name="badgeTextSize" format="dimension" />
+        <attr name="badgeColor" format="color" />
+        <attr name="badgeSize" format="dimension" />
+        <attr name="badgeOffsetX" format="dimension" />
+        <attr name="badgeOffsetY" format="dimension" />
+        <attr name="badgePosition">
+            <flag name="start" value="1" />
+            <flag name="top" value="2" />
+            <flag name="end" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="badgeShape" format="enum">
+            <!--<enum name="hexagon" value="0" />-->
+            <enum name="romb" value="1" />
+            <enum name="square" value="2" />
+            <!--<enum name="romb_fluff" value="3" />-->
+            <enum name="circle" value="4" />
+            <!--<enum name="square_fluff" value="5" />-->
+            <!--<enum name="octagon" value="6" />-->
+            <!--<enum name="star" value="7" />-->
+        </attr>
+    </declare-styleable>
+</resources>
