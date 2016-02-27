@@ -2,9 +2,17 @@
 
 MaterialBadge is a small, RTL-ready Android library which simplifies equipment of Views with nice badges of various shapes, sizes, colors and labels
 
-# How it works?
+## Screenshot
 
-Wrap your Views with the BadgedView class (which extends the FrameLayout class) to display a customizable badge
+![alt text](https://github.com/0x0af/materialbadge/blob/master/Screenshot_20160227-062627.png "Screenshot")
+
+## Demo
+
+[Material Badge Example in Play Store](https://play.google.com/store/apps/details?id=xaf.clean.materialbadgeexample)
+
+# How does it work?
+
+Wrap your View with the BadgedView class (which extends the FrameLayout class) to display a customizable badge
 
 ## Include via XML layout
 
@@ -45,14 +53,16 @@ Wrap your Views with the BadgedView class (which extends the FrameLayout class) 
 | app:badgePosition  | flag, defines the corner of the child View to which the badge sticks          |
 | app:badgeShape     | enum, defines the shape of the badge (circle, square, romb)                   |
 
-## Update any feature at runtime
+## Access, customize, update any feature at runtime
 
     BadgedView badgedView = (BadgedView) findViewById(R.id.badgedView);
     badgedView.setBadgeText("7");
 
 # Include in your project
 
-    
+Add to your build.gradle `dependencies` closure:
+
+    compile 'xaf.clean:materialbadge:1.0'
 
 # License
 
