@@ -1,4 +1,4 @@
-# MaterialBadge
+# MaterialBadge [ ![Download](https://api.bintray.com/packages/xaf/maven/MaterialBadge/images/download.svg) ](https://bintray.com/xaf/maven/MaterialBadge/_latestVersion)
 
 MaterialBadge is a small, RTL-ready Android library which simplifies equipment of Views with nice badges of various shapes, sizes, colors and labels
 
@@ -47,11 +47,13 @@ Wrap your View with the BadgedView class (which extends the FrameLayout class) t
 | app:badgeTextColor | color, defines badge text color                                               |
 | app:badgeTextSize  | dimension, defines badge text size                                            |
 | app:badgeColor     | color, defines badge (body) color                                             |
-| app:badgeSize      | dimension, defines badge size (diameter for circle, side for square and romb) |
+| app:badgeSize      | dimension, defines badge size (diameter for circle, side for square and
+rhomb) |
 | app:badgeOffsetX   | dimension, defines x-axis offset from the corner selected with badgePosition  |
 | app:badgeOffsetY   | dimension, defines y-axis offset from the corner selected with badgePosition  |
 | app:badgePosition  | flag, defines the corner of the child View to which the badge sticks          |
-| app:badgeShape     | enum, defines the shape of the badge (circle, square, romb)                   |
+| app:badgeShape     | enum, defines the shape of the badge (circle, square,
+rhomb)                   |
 
 ## Access, customize, update any feature at runtime
 
@@ -62,7 +64,7 @@ Wrap your View with the BadgedView class (which extends the FrameLayout class) t
 
 Add to your build.gradle `dependencies` closure:
 
-    compile 'xaf.clean:materialbadge:1.0'
+    compile 'xaf.clean:materialbadge:1.1'
 
 # License
 
