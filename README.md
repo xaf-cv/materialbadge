@@ -4,7 +4,7 @@ MaterialBadge is a small, RTL-ready Android library which simplifies equipment o
 
 ## Screenshot
 
-![alt text](https://github.com/0x0af/materialbadge/blob/master/Screenshot_20160227-062627.png "Screenshot")
+![Screenshot](https://raw.githubusercontent.com/0x0af/materialbadge/master/Screenshot_20160227-062627.png)
 
 ## Demo
 
