@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>MaterialBadge by 0x0af</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>MaterialBadge</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/0x0af/materialbadge">View the Project on GitHub <small>0x0af/materialbadge</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/0x0af/materialbadge/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/0x0af/materialbadge/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/0x0af/materialbadge">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="materialbadge---" class="anchor" href="#materialbadge---" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MaterialBadge <a href="https://bintray.com/xaf/maven/MaterialBadge/_latestVersion"> <img src="https://api.bintray.com/packages/xaf/maven/MaterialBadge/images/download.svg" alt="Download"> </a>
+</h1>
+
+<p>MaterialBadge is a small, RTL-ready Android library which simplifies equipment of Views with nice badges of various shapes, sizes, colors and labels</p>
+
+<h2>
+<a id="screenshot" class="anchor" href="#screenshot" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshot</h2>
+
+<p><img src="https://github.com/0x0af/materialbadge/blob/master/Screenshot_20160227-062627.png" alt="alt text" title="Screenshot"></p>
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
+
+<p><a href="https://play.google.com/store/apps/details?id=xaf.clean.materialbadgeexample">Material Badge Example in Play Store</a></p>
+
+<h1>
+<a id="how-does-it-work" class="anchor" href="#how-does-it-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How does it work?</h1>
+
+<p>Wrap your View with the BadgedView class (which extends the FrameLayout class) to display a customizable badge</p>
+
+<h2>
+<a id="include-via-xml-layout" class="anchor" href="#include-via-xml-layout" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Include via XML layout</h2>
+
+<pre><code>&lt;xaf.clean.materialbadge.BadgedView
+    android:id="@+id/badgedView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:badgeIsVisible="true"
+    app:badgeText="1"
+    app:badgeTextColor="#FFFFFF"
+    app:badgeTextSize="10sp"
+    app:badgeColor="#FF0000"
+    app:badgeSize="12dp"
+    app:badgeOffsetX="4dp"
+    app:badgeOffsetY="0dp"
+    app:badgePosition="end|top"
+    app:badgeShape="circle"&gt;
+
+    &lt;!-- Put a View to be equipped with a badge here --&gt;
+    &lt;View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /&gt;
+
+&lt;/xaf.clean.materialbadge.BadgedView&gt;
+</code></pre>
+
+<h2>
+<a id="customize-via-xml-attributes" class="anchor" href="#customize-via-xml-attributes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Customize via XML attributes</h2>
+
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>app:badgeIsVisible</td>
+<td>boolean, defines badge visibility</td>
+</tr>
+<tr>
+<td>app:badgeText</td>
+<td>string, defines badge text</td>
+</tr>
+<tr>
+<td>app:badgeTextColor</td>
+<td>color, defines badge text color</td>
+</tr>
+<tr>
+<td>app:badgeTextSize</td>
+<td>dimension, defines badge text size</td>
+</tr>
+<tr>
+<td>app:badgeColor</td>
+<td>color, defines badge (body) color</td>
+</tr>
+<tr>
+<td>app:badgeSize</td>
+<td>dimension, defines badge size (diameter for circle, side for square and</td>
+</tr>
+<tr>
+<td>rhomb)</td>
+<td></td>
+</tr>
+<tr>
+<td>app:badgeOffsetX</td>
+<td>dimension, defines x-axis offset from the corner selected with badgePosition</td>
+</tr>
+<tr>
+<td>app:badgeOffsetY</td>
+<td>dimension, defines y-axis offset from the corner selected with badgePosition</td>
+</tr>
+<tr>
+<td>app:badgePosition</td>
+<td>flag, defines the corner of the child View to which the badge sticks</td>
+</tr>
+<tr>
+<td>app:badgeShape</td>
+<td>enum, defines the shape of the badge (circle, square,</td>
+</tr>
+<tr>
+<td>rhomb)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="access-customize-update-any-feature-at-runtime" class="anchor" href="#access-customize-update-any-feature-at-runtime" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Access, customize, update any feature at runtime</h2>
+
+<pre><code>BadgedView badgedView = (BadgedView) findViewById(R.id.badgedView);
+badgedView.setBadgeText("7");
+</code></pre>
+
+<h1>
+<a id="include-in-your-project" class="anchor" href="#include-in-your-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Include in your project</h1>
+
+<p>Add to your build.gradle <code>dependencies</code> closure:</p>
+
+<pre><code>compile 'xaf.clean:materialbadge:1.1'
+</code></pre>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+
+<pre><code>Copyright 2016 Anton F. [A.K.A. xAF]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/0x0af">0x0af</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
