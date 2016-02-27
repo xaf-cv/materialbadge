@@ -212,7 +212,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:badgeColor="@color/md_blue_grey_500"
-                app:badgeShape="romb">
+                app:badgeShape="rhomb">
 
                 <ImageView
                     android:id="@+id/imageView6"
